@@ -15,7 +15,6 @@ def filename_enter():
 
 def open_file(filename):
     words = []
-    words_clear = []
     with open(filename, encoding="utf-8") as f:
         words = f.read().lower().split()
     return words
